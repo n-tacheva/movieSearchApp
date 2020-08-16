@@ -1,0 +1,17 @@
+<%- include("partials/header") %>
+<div class="container - fluid">
+    <div class="card" style="width: 40%; margin: 50px auto;">
+        <div class="card-header">
+            <h2>Search for a movie</h2>
+        </div>
+        <div class="card-body">
+            <form action="/results" method="GET">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="search movie" name="search">
+                </div>
+                <input class="btn btn-outline-primary" type="submit" value="Search">
+            </form>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer") %>
